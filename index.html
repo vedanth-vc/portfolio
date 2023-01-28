@@ -39,35 +39,44 @@
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt odit maiores sint. Iure atque soluta ad. Quos velit a odit beatae temporibus inventore tempore doloremque excepturi eligendi. Ut, architecto reiciendis.
                     </p>
                     <div class="tab-titles">
-                       <p class="tab-links active-link">Skills</p> 
-                       <p class="tab-links">Experience</p> 
-                       <p class="tab-links">Education</p> 
+                       <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> 
+                       <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                       <p class="tab-links" onclick="opentab('Education')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span>Designing Web/App Development</li>
-                            <li><span>App Development</span>Building Android/ios apps</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Designing Web/App Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2021 - current</span>UI/UX Design traning at et institute</li>
-                            <li><span>2019</span>Team lead at starapp llc</li>
-                            <li><span>2017</span>Internship at ekart ecommerce</li>
+                            <li><span>2021 - current</span><br>UI/UX Design traning at et institute</li>
+                            <li><span>2019 -2021</span><br>Team lead at starapp llc</li>
+                            <li><span>2017-2019</span><br>UI/UX Design Executive at coin digital Ltd.</li>
+                            <li><span>2016-2017</span><br>Internship at Ekart Ecommerce.</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>UI/UX</span>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span>Designing Web/App Development</li>
-                            <li><span>App Development</span>Building Android/ios apps</li>
+                            <li><span>2016</span><br>UI/UX Design at ET Institute</li>
+                            <li><span>2016</span><br>MBA from MIT Bangalore.</li>
+                            <li><span>2014</span><br>from ISM Bangalore</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
+    <script>
+        var tablinks = document.getElementByClassName("tab-links");
+        var tabcontents = document.getElementByClassName("tab-contents");
+        
+        function opentab(tabname){
+
+        }
+    </script>
 </body>
 </html>
